@@ -10,7 +10,7 @@ public class EmployeeController {
     @Autowired
     EmployeeRepository eerpo;
 
-    @RequestMapping("/test")
+    @RequestMapping("/testing")
     public String test(){
         return "This is the reactive Programming ";
     }
