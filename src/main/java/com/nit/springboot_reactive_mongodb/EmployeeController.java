@@ -10,7 +10,7 @@ public class EmployeeController {
     @Autowired
     EmployeeRepository eerpo;
 
-    @RequestMapping("/testing")
+    @RequestMapping("/testone")
     public String test(){
         return "This is the reactive Programming ";
     }
@@ -23,7 +23,7 @@ public class EmployeeController {
        // return Mono.just("Data will be saved");
 
     }
-    @GetMapping("/all")
+    @GetMapping("/alldata")
     public Flux<Employee>all(){
         return eerpo.findAll();
     }
